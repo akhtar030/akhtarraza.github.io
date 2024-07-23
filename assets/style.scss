@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+// custome color variables
+$frist: #052d24;
+$second: #ddfc98;
+
+
+html,body{
+    background-color: $frist;
+    font-family: "Oswald", sans-serif;
+    height: 100%;
+}
+
+header{
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    h1{
+        color: $second;
+    }
+    nav{
+        .navbar-brand{
+            color: $second;
+        }
+        li{
+            padding: 5px 15px !important;
+            a{
+                color: $second !important;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+h1{
+    color: $second;
+    text-transform: uppercase;
+}
+
+label{
+    margin-bottom: 5px;
+    color: $second;
+}
+
+p{
+    color: $second;
+}
+
+section{
+    height: 100%;
+    // border: 2px solid #fff;
+    padding: 20px 0;
+}
+
+#home{
+    margin-top: 88px;
+}
+
+.form-control{
+    height: 50px;
+    border-radius: 0px;
+}
+textarea.form-control{
+    height: auto;
+}
+
+.btn-submit{
+    width: 100%;
+    background-color: $second;
+    height: 50px;
+    border-radius: 0;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $second;
+    }
+}
