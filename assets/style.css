@@ -10,6 +10,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  background-color: #052d24;
 }
 header h1 {
   color: #ddfc98;
