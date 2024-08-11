@@ -17,6 +17,8 @@ header h1 {
 }
 header nav .navbar-brand {
   color: #ddfc98;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 header nav li {
   padding: 5px 15px !important;
@@ -47,7 +49,7 @@ h2 {
 }
 #home img {
   border-radius: 20px;
-  border: 2px solid #ddfc98;
+  border: 0px solid #ddfc98;
   transform: rotate(5deg);
   height: 400px;
   width: 390px;
@@ -131,4 +133,10 @@ textarea.form-control {
 }
 .btn-submit:hover {
   background-color: #ddfc98;
+}
+
+.img-gallery {
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
