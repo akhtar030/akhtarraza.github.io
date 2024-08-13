@@ -96,6 +96,21 @@ h2{
     }
 }
 
+#hire{
+    h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+        span{
+            font-size: 20px;
+            display: inline-block;
+        }
+    }
+    p{
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+
 .btn-dow{
     background-color: transparent;
     border: 2px solid $second;
@@ -153,9 +168,16 @@ textarea.form-control{
 }
 
 .img-icon{
-    width: 200px;
+    width: 150px;
+    margin-bottom: 20px;
 }
 
 #skills{
     background-color: #016764;
+}
+
+.card{
+    background-color: transparent;
+    border: 2px solid $second;
+    height: 250px;
 }
