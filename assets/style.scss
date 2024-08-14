@@ -39,11 +39,13 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1001;
     background-color: $frist;
     h1{
         color: $second;
     }
     nav{
+        z-index: 1000;
         .navbar-brand{
             color: $second;
             text-transform: uppercase;

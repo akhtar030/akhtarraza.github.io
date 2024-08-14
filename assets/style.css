@@ -31,10 +31,14 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1001;
   background-color: #021526;
 }
 header h1 {
   color: #f7f7f7;
+}
+header nav {
+  z-index: 1000;
 }
 header nav .navbar-brand {
   color: #f7f7f7;
