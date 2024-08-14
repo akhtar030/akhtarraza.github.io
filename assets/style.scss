@@ -2,14 +2,36 @@
 
 
 // custome color variables
-$frist: #052d24;
-$second: #ddfc98;
+$frist: #021526;
+$second: #f7f7f7;
+$third: #03346E;
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 
 html,body{
     background-color: $frist;
     font-family: "Oswald", sans-serif;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -97,6 +119,7 @@ h2{
 }
 
 #hire{
+    background-color: $third;
     h1{
         font-size: 50px;
         margin-bottom: 30px;
@@ -109,6 +132,14 @@ h2{
         font-size: 15px;
         font-weight: normal;
     }
+}
+
+#skills{
+    background-color: #17153B;
+}
+
+#contact{
+    background-color: #153448;
 }
 
 .btn-dow{
@@ -173,11 +204,48 @@ textarea.form-control{
 }
 
 #skills{
-    background-color: #016764;
+    // background-color: #016764;
 }
 
 .card{
     background-color: transparent;
     border: 2px solid $second;
     min-height: 250px;
+}
+
+hr{
+    border: 2px solid $second;
+}
+
+.my-form{
+    .position-relative{
+        margin-bottom: 30px;
+    }
+    .label-control{
+        position: absolute;
+        transition: all .3s ease-in-out;
+        top: 12px;
+        color: $third;
+        left: 20px;
+    }
+    .custom-input{
+        transition: all .3s ease-in-out;
+    }
+    .custom-input:focus ~ .label-control, .custom-input:valid ~ .label-control {
+        top: -24px;
+        left: 10px;
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+.intl-tel-input,
+.iti{
+  width: 100%;
+}
+
+@media (max-width: 768px){
+    .sm-mb{
+        margin-bottom: 15px;
+    }
 }
