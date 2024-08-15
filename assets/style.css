@@ -52,6 +52,10 @@ header nav li a {
   color: #f7f7f7 !important;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: 0.5s;
+}
+header nav li a:hover {
+  border: 2px solid #f7f7f7 !important;
 }
 
 h1 {

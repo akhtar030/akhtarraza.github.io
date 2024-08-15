@@ -94,6 +94,9 @@
                             <a href="https://github.com/akhtar030">
                                 <i class="fa-brands fa-github"></i>
                             </a>
+                            <a href="https://www.youtube.com/@journey_oflife00">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -284,33 +287,35 @@
                     </p>
                 </div> -->
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="row mx-0 my-form">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
-                            <input type="text" placeholder="" class="form-control custom-input" required>
-                            <label for="" class="label-control">Your Name</label>
+                    <form action="contact.php" method="post">
+                        <div class="row mx-0 my-form">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
+                                <input type="text" placeholder="" name="fullName" class="form-control custom-input" required>
+                                <label for="" class="label-control">Your Name</label>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
+                                <input type="email" placeholder="" name="email" class="form-control custom-input" required>
+                                <label for="" class="label-control">Email</label>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
+                                <input type="text" placeholder="" name="phone" id="mobile_code" class="form-control custom-input" required>
+                                <label for="" class="label-control">Phone</label>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
+                                <input type="text" placeholder="" name="country" class="form-control custom-input" required>
+                                <label for="" class="label-control">Country</label>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 position-relative">
+                                <textarea name="" id="" class="form-control custom-input" name="message" rows="5" required></textarea>
+                                <label for="" class="label-control">Your Message</label>
+                            </div>
+                            <div class="col-xl-12 col-lg-12">
+                                <button class="btn btn-submit" type="submit">
+                                    Submit
+                                </button>
+                            </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
-                            <input type="email" placeholder="" class="form-control custom-input" required>
-                            <label for="" class="label-control">Email</label>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
-                            <input type="text" placeholder="" id="mobile_code" class="form-control custom-input" required>
-                            <label for="" class="label-control">Phone</label>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative">
-                            <input type="text" placeholder="" class="form-control custom-input" required>
-                            <label for="" class="label-control">Country</label>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 position-relative">
-                            <textarea name="" id="" class="form-control custom-input" rows="5" required></textarea>
-                            <label for="" class="label-control">Your Message</label>
-                        </div>
-                        <div class="col-xl-12 col-lg-12">
-                            <button class="btn btn-submit">
-                                Submit
-                            </button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
