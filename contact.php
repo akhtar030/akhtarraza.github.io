@@ -1,26 +1,18 @@
-<?php 
-    $to = "akhtarraza30@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $full_name = $_POST['fullName'];
-    $phone = $_POST['phone'];
-    $country = $_POST['country'];
-    $subject = "Form submission";
-    $message = $full_name . " " . "\n\n" . $_POST['message'];
-
-    $headers = 'From: info@akhtarraza.onrender.com'. "\r\n" .
-                 'Reply-To: akhtarraza30@gmail.com' . "\r\n" .
-                 'X-Mailer: PHP/' . phpversion();
-    $isEmailSent = mail($to,$subject,$message,$phone,$country,$headers);
-    alert("Mail Sent. Thank you " . $full_name . ", we will contact you shortly.");
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    if(isset($isEmailSent))//change
-    {
-        alert("Mail sent successfully...");
-        header("Location: index.html");
+<?php
+    //get data from form  
+    $name = $_POST['fullName'];
+    $email= $_POST['email'];
+    $phone= $_POST['phone'];
+    $country= $_POST['country'];
+    $message= $_POST['message'];
+    $to = "akhtarraza30@gmail.com,hhhlll74@gmail.com";
+    $subject = "Akhtar Raza UI/UX - ";
+    $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Phone =" . $phone . "\r\n Country =" . $country . "\r\n Message =" . $message;
+    $headers = "From: akhtarraza@akhtarraza.onrender.com" . "\r\n" .
+    "CC: akhtarraza30@gmail.com,nazranaansari186@gmail.com";
+    if($email!=NULL){
+        mail($to,$subject,$txt,$headers);
     }
-    else
-    {
-        alert("Mail could not be sent...");
-        header("Location: https://akhtarraza.onrender.com/#contact");
-    }
+    //redirect
+    header("Location:success.html");
 ?>
