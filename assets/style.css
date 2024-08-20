@@ -54,9 +54,6 @@ header nav li a {
   letter-spacing: 2px;
   transition: 0.5s;
 }
-header nav li a:hover {
-  border: 2px solid #f7f7f7 !important;
-}
 
 h1 {
   color: #f7f7f7;
@@ -73,17 +70,7 @@ h2 {
   font-size: 65px;
 }
 
-#home p {
-  font-size: 18px;
-}
-#home img {
-  border-radius: 20px;
-  border: 0px solid #f7f7f7;
-  transform: rotate(5deg);
-  height: 400px;
-  width: 390px;
-}
-#home .social-icon a {
+.social-icon a {
   text-decoration: none;
   border: 1px solid #f7f7f7;
   border-radius: 50%;
@@ -95,15 +82,26 @@ h2 {
   margin-right: 10px;
   transition: 0.5s;
 }
-#home .social-icon a i {
+.social-icon a i {
   color: #f7f7f7;
 }
-#home .social-icon a:hover {
+.social-icon a:hover {
   color: #021526 !important;
   background-color: #f7f7f7;
 }
-#home .social-icon a:hover i {
+.social-icon a:hover i {
   color: #021526 !important;
+}
+
+#home p {
+  font-size: 18px;
+}
+#home img {
+  border-radius: 20px;
+  border: 0px solid #f7f7f7;
+  transform: rotate(5deg);
+  height: 400px;
+  width: 390px;
 }
 #home h1 {
   font-size: 50px;
