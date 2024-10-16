@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        /* background-color: #2c2b2b10; */
+        /* color: #f7f7f7; */
+    }
+    /* img{
+        width: 200px;
+    } */
+     
+
+    h1{
+        margin: 0;
+        /* font-size: 20px; */
+    }
+
+    p{
+        padding: 10px 15px;
+        background-color: red;
+    }
+    button{
+        padding: 10px 15px;
+        background-color: #27a465;
+        border: 1px solid #27a465;
+        color: #fff;
+        font-size: 16px;
+        /* font-weight: bold; */
+    }
+</style>
+<body id="lol">
+    <button type="button" onclick="myFunction()">Count!</button>
+    <h1 id="demo" class="text-danger">0</h1><br>
+    <h1 id="demo1"></h1><br>
+    <h1 id="demo2"></h1><br>
+    <h1 id="demo3"></h1><br>
+    <h1 id="demo4"></h1><br>
+    <h1 id="demo5"></h1>
+
+    <!-- <button id="btn">Click Me</button>
+    <a href="https://google.com" target="newframe">New Page</a>
+    <input type="checkbox" id="chk"> -->
+</body>
+<script>
+
+    "use strict";
+    let array = [54,23,12,67,32,3,78,5,2,87,2,87,67];
+
+    let array1 = [1,1,2,3,3,4,5,6,7,8,9,10,11,12];
+
+    
+    document.getElementById("demo2").innerHTML = array1;
+
+    // let sortAr = array.sort((a,b) => b - a);
+    // document.getElementById("demo3").innerHTML = sortAr;
+
+    // function myfun(number){
+    //     let r = 0;
+    //     while(number > 0){
+    //         r = r * 10 + number % 10;
+    //         number = Math.floor(number / 10);
+    //     }
+    //     return r;
+    // }
+
+    // console.log(myfun(123456789))
+
+
+    // function cdate(d1,d2){
+    //     let date1 = new Date(d1).getTime();
+    //     let date2 = new Date(d2).getTime();
+    //     if(date1 > date2){
+    //         console.log("true");
+    //     }
+    //     else if(date1 < date2){
+    //         console.log("false")
+    //     }
+    //     else{
+    //         console.log("both")
+    //     }
+    // }
+
+    // cdate('07/26/2024','07/25/2024')
+    // cdate('07/26/2024','07/27/2024')
+    // cdate('07/27/2024','07/27/2024')
+
+    // console.log("Find Max", Math.max(1,2,5,12,3,7,8));
+
+    // function findPrine(n){
+    //     // Corner case
+    //     if (n <= 1)
+    //         return false;
+
+    //     // Check from 2 to n-1
+    //     for (let i = 2; i < n; i++)
+    //         if (n % i == 0)
+    //             return false;
+
+    //     return true;
+    // }
+
+    // findPrine(11) ? console.log("true"):console.log(false)
+
+    // const dup = array.filter((item,index) => array.indexOf(item) == index);
+    // console.log("Uni",dup)
+
+    // function sumOfArray(targetnum){
+    //     let res = [];
+    //     for(let i = 1; i < array.length; i++){
+    //         for(let j = i; j < array.length; j++){
+    //             if(array[i] + array[j] == targetnum){
+    //                 res.push([array[i],array[j]]);
+    //             }
+    //         }
+    //     }
+    //     return res;
+    // }
+
+    // document.getElementById("demo4").innerHTML = sumOfArray(28);
+    // console.log(sumOfArray(28))
+
+    // filter find map reduce
+    
+    // function palinDrome(str){
+    //     let result  = str.split("").reverse().join("");
+
+    //     if(result == str){
+    //         console.log(true);
+    //     }
+    //     else{
+    //         console.log(false);
+    //     }
+    // }
+
+    // console.log(palinDrome("maddam"))
+
+    // let filterArray = array1.filter(el => el % 2 != 0);
+    // console.log(filterArray);
+
+    // let sortNumber = array1.sort((a,b) => a - b);
+    // console.log(sortNumber);
+
+    // console.log("ToSring Method",array.toString())
+    // console.log(array.join("**"));
+    // console.log(array.pop())
+    // console.log(array.push(22));
+    // console.log(array.shift());
+    // console.log(array.unshift(22,34));
+    // console.log(array);
+    // let r = array.concat(array1);
+    // console.log(array.sort());
+
+    // let a = [12,13,14,15,16];
+    // console.log(a.slice(1,4));
+    // console.log(a);
+
+    // let myProfmise = new Promise(function(resolve, reject){
+    //     setTimeout(() => {
+    //         resolve("This is working fine");
+    //     }, 3000);
+    // });
+
+    // myProfmise.then(function(value){
+    //     document.getElementById("demo2").innerHTML = value;
+    // })
+
+//     function longStr(str){
+//         // str = str.match(/[a-zA-Z0-9]+/gi);
+//         str = str.match(/[a-zA-Z0-9]+/gi)
+//         let largest = "";
+//         for(let i = 0; i < str.length; i++){
+//             if(str[i].length > largest.length){
+//                 largest = str[i];
+//             }
+//         }
+//         return largest;
+//     }
+
+//     // document.getElementById("demo3").innerHTML = longStr("lorem ipsum and we are working very hard to achive this summer vacation");
+
+//     function longString(str){
+//         str = str.split(" ");
+//         return str.sort((a,b) => b.length - a.length)[0];
+//     }
+
+//     // document.getElementById("demo4").innerHTML = longString("lorem ipsum is the dummy text for website-design content");
+
+//     let name = 'akhtar raza';
+
+//     document.getElementById("demo3").innerHTML = name;
+
+//     function removeDuplicate(arr){
+//         // arr = arr.split("")
+//         return [...new Set(arr)];
+//     }
+
+//     document.getElementById("demo4").innerHTML = removeDuplicate(array);
+
+//     function revString(str){
+//         let reverse = '';
+
+//         for(let i = str.length-1; i >= 0; i--){
+//             reverse += str[i]
+//         }
+//         return reverse;
+//     }
+
+//     document.getElementById("demo3").innerHTML = revString("dnab rathkahB");
+
+
+// let str = "akhtar raza";
+// str = str.split(" ");
+// let uniName = str.filter((item,index) => str.indexOf(item) != index);
+
+// console.log(uniName);
+
+// const person = {
+//     firstName: "Akhtar",
+//     lastName: "Raza",
+//     fullName: function(city,country){
+//         return this.firstName + " " + this.lastName + " " + city + " " + country ;
+//     }
+// }
+
+// const person1 = {
+//     firstName: "Nazrana",
+//     lastName: "Ansari"
+// }
+
+// console.log(person.fullName.apply(person1,['ludhiana','india']));
+
+// // let counter = 0;
+
+// const add = (function(){
+//     let counter = 0;
+    
+//     return function(){counter += 1; return counter};
+// })();
+// add()
+// add()
+// add()
+
+// function myFunction(){
+//   document.getElementById("demo").innerHTML = add();
+// }
+
+let counter = 0;
+function add(){
+    counter += 1;
+}
+
+//document.getElementById("demo").innerHTML = 
+
+function mysum(val){
+    let result = 0;
+    while(val > 0){
+        result = result * 10 + val % 10;
+        val = Math.floor(val / 10)
+    }
+    return result;
+}
+
+console.log(mysum(523))
+
+
+    
+
+</script>
+</html>

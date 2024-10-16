@@ -1,0 +1,31 @@
+// @mixin important_text{
+//     color: #2f6f98;
+//     background-color: #f7f7f7;
+//     font-size: 23px;
+// }
+
+// @mixin borders($width: 3px, $color: blue){
+//     border: $width solid $color
+// }
+
+// @mixin br($rad){
+//     border-radius: $rad
+// }
+
+// @mixin heading-padding($pt, $pb, $pl, $pr){
+//     padding: $pt $pb $pl $pr ;
+// }
+
+// @mixin transform($property){
+//     -webkit-transform: $property;
+//     -ms-transform: $property;
+//     transform: $property
+// }
+
+// .text-danger{
+//     @include important_text();
+//     @include borders(2px);
+//     @include br(30px);
+//     @include heading-padding(10px,15px,10px,15px);
+//     @include transform(rotate(0deg));
+// }

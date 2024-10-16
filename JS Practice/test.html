@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+    </ul>
+</body>
+<script>
+    
+    let array = [22,12,34,1,5,10,18];
+    
+    sumOfGivenNumber = (targetNumber) =>{
+        let result = [];
+        for(let i = 0; i < array.length; i++){
+            for(var a = i + 1; a < array.length; a++){
+                if(array[i] + array[a] == targetNumber){
+                    result.push([array[i], array[a]]);
+
+                }
+            }
+        }
+        return result;
+    }
+    
+    console.log(sumOfGivenNumber(28));
+
+    
+
+
+</script>
+</html>
